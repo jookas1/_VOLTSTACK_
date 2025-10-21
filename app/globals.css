@@ -30,3 +30,110 @@ body {
   
   
 }
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logoWrapper {
+  position: absolute;
+  opacity: 0;
+  transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+}
+
+.logo {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* المرحلة الأولى: اللوجوهات تتحرك وتتقابل في المركز */
+.moveTogether {
+  opacity: 1 !important;
+  transform: translateX(0) translateY(0) scale(1) !important;
+}
+
+.moveTogether:nth-child(1) { transform: translateX(-100px) translateY(-50px) scale(0.8); }
+.moveTogether:nth-child(2) { transform: translateX(-50px) translateY(50px) scale(0.8); }
+.moveTogether:nth-child(3) { transform: translateX(0) translateY(0) scale(0.8); }
+.moveTogether:nth-child(4) { transform: translateX(50px) translateY(-50px) scale(0.8); }
+.moveTogether:nth-child(5) { transform: translateX(100px) translateY(50px) scale(0.8); }
+
+/* المرحلة الثانية: أول لوجو يختفي */
+.fadeOut {
+  opacity: 0 !important;
+  transform: scale(0.5) !important;
+}
+
+/* المرحلة الثالثة: اللوب من اليمين */
+.loopFromRight {
+  opacity: 0;
+  transform: translateX(400px) scale(0.8);
+  animation: loopAnimation 3s ease-in-out infinite;
+}
+
+/* تأخيرات مختلفة لكل لوجو في اللوب */
+.delay-0 { animation-delay: 0s; }
+.delay-1 { animation-delay: 0.6s; }
+.delay-2 { animation-delay: 1.2s; }
+.delay-3 { animation-delay: 1.8s; }
+.delay-4 { animation-delay: 2.4s; }
+
+@keyframes loopAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(400px) scale(0.8);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-400px) scale(0.8);
+  }
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .logo {
+    width: 80px;
+    height: 40px;
+  }
+  
+  .moveTogether:nth-child(1) { transform: translateX(-60px) translateY(-30px) scale(0.7); }
+  .moveTogether:nth-child(2) { transform: translateX(-30px) translateY(30px) scale(0.7); }
+  .moveTogether:nth-child(3) { transform: translateX(0) translateY(0) scale(0.7); }
+  .moveTogether:nth-child(4) { transform: translateX(30px) translateY(-30px) scale(0.7); }
+  .moveTogether:nth-child(5) { transform: translateX(60px) translateY(30px) scale(0.7); }
+  
+  @keyframes loopAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(200px) scale(0.7);
+    }
+    20% {
+      opacity: 1;
+      transform: translateX(0) scale(0.9);
+    }
+    80% {
+      opacity: 1;
+      transform: translateX(0) scale(0.9);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-200px) scale(0.7);
+    }
+  }
+}

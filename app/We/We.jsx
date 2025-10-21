@@ -6,18 +6,18 @@ export default function We() {
         <header className='text-center'>
             <h2 className='text-3xl font-semibold hidden md:flex justify-center '>لماذا نحن </h2>
         </header>
-        <div className='flex w-[90%] flex-wrap  my-6  justify-center items-center mx-3'>
+        <div className='flex w-[90%] flex-wrap   justify-center items-center mx-auto'>
             <div className='w-[45%] lg:w-[23%] text-center'>
                 <h3 className='text-6xl text-[#C0D1F5]'>01</h3>
                 <h4 className='font-bold  my-4'>متحرك بضغطة زر</h4>
                 <p className='md:w-65 mx-auto text-gray-500'>حوّل موقعك الإلكتروني إلى متجر متكامل في ثوانٍ، بدون تعقيد أو خطوات طويلة.</p>
             </div>
-              <div className='w-[45%] lg:w-[23%] text-center mx-3 my-2'>
+              <div className='w-[45%] lg:w-[23%] text-center mx-3 '>
                 <h3 className='text-6xl text-[#C0D1F5]'>02</h3>
                 <h4 className='font-bold  my-4'>حلول مرنة لك</h4>
                 <p className='md:w-65 mx-auto text-gray-500'>مع موقعك، تحصل على تطبيق موبايل جاهز ليخلي متجرك أقرب لعملاءك.</p>
             </div>
-              <div className='w-[45%] lg:w-[23%] text-center my-3 mx-3'>
+              <div className='w-[45%] lg:w-[23%] text-center md:translate-y-0 translate-y-3 mx-3'>
                 <h3 className='text-6xl text-[#C0D1F5]'>03</h3>
                 <h4 className='font-bold  my-4'>متحرك بضغطة زر</h4>
                 <p className='md:w-65 mx-auto text-gray-500'>سواء تبيع منتجات رقمية أو فعلية، حلولنا التقنية تتكيف مع طبيعة تجارتك.</p>
