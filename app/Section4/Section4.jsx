@@ -5,9 +5,10 @@ export default function Section4() {
      <section className='py-5'>
      <div className='w-[90%] md:w-[70%] bg-[#EFF4FF] mx-auto lg:flex justify-around  gap-5  items-center mt-15 rounded-xl pt-2  pb-80 lg:pb-50 overflow-hidden  -translate-y-5'>
         <div className='w-[45%] mt-6 md:mx-0 mx-2  lg:hidden'>
-          <h3 className='text-3xl font-semibold w-[350px] md:w-100 my-4'>نون – التصميمات الهندسية والمعمارية الحديثة في السعودية</h3>
+          <h3 className='text-3xl font-semibold w-[350px] md:w-100 my-4'>EventX – مستقبل الفعاليات في السعودية </h3>
           <p className='w-70 md:w-[470px]'>
-            شركة نون متخصصة في التصميمات الهندسية والمعمارية الحديثة. تم تطوير الموقع الإلكتروني لعرض مشاريعهم المبتكرة مع إبراز التزامهم بالمعايير البيئية والاجتماعية والاقتصادية. بواجهة عصرية واحترافية، يعكس الموقع خبرة نون ويؤكد مكانتها كشركة رائدة في مجال العمارة المستدامة بالمملكة.</p> 
+            EventX هي أول منصة سعودية متخصصة في الفعاليات وتصميم الأكشاك. تربط بين العملاء ومقدمي الخدمات الموثوقين لتقديم حلول مخصصة في تجهيز الأكشاك وتنظيم الفعاليات. يرفع المشتري مشروعه، ويقدم مزودو الخدمات عروضًا إبداعية بالتصاميم والأسعار، مما يجعل تنظيم الفعاليات أسهل وأسرع وأكثر وضوحًا.
+          </p>
        </div>
         <div className='bg-red-400 md:w-[45%] relative  '> 
           <div className='absolute -bottom-200 rounded-2xl translate-y-21 md:-translate-x-40 -translate-x-25 shadow-lg'>
